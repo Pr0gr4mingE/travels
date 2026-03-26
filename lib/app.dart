@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'screens/tela_principal.dart';
+import 'screens/tela_perfil.dart';
 
-class MyApp extends StatelessWidget{
-    const MyApp({super.key});
+class App extends StatelessWidget{
+    const App({super.key});
 
     @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: "Travel's home",
+        title: "Travels",
         debugShowCheckedModeBanner: false,
-        home: const MyApp(),
+        home: const App(),
+        theme: ThemeData(fontFamily: 'SourGummy'),
     );
   }
 }
