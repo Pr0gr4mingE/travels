@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/tela_perfil.dart';
+import 'screens/tela_inicio.dart';
+
 
 class App extends StatelessWidget{
     const App({super.key});
@@ -7,9 +8,9 @@ class App extends StatelessWidget{
     @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: "Travels",
+        title: "Set To Head",
         debugShowCheckedModeBanner: false,
-        home: const App(),
+        home: const TelaInicio(),
         theme: ThemeData(fontFamily: 'SourGummy'),
     );
   }
