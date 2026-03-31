@@ -6,11 +6,14 @@ class RotuloDescricao extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      descricao,
+    return Container(
+      padding: EdgeInsets.all(12.0),
+      child: Text(
+        descricao,
       style: const TextStyle(
         fontSize: 16.0,
         color: Colors.pinkAccent,
+      )
       )
     );
   }

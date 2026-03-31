@@ -12,6 +12,7 @@ class TelaPerfil extends StatelessWidget {
  Widget build (BuildContext context){
   return Scaffold(
     appBar: AppBar(
+      backgroundColor: Colors.grey,
       title: Row(mainAxisAlignment: MainAxisAlignment.center,
       children: [
         RotuloTitulo(titulo: "Set to Head"),
@@ -19,11 +20,14 @@ class TelaPerfil extends StatelessWidget {
     ),
     body: Column(
       children: [
-        Padding(padding: EdgeInsetsGeometry.all(10.0)),
         ImagemUsuario(imageuser: AssetImage('assets/images/UserEPK.png'),),
+        SizedBox(height: 10.0,),
         RotuloTexto(texto: "Kitty",),
-        RotuloDescricao(descricao: "Coringadissimo",),
-        ListaInformacoes(info01: "TI",info02: DateTime(2007,03,17),info03: "Babaloo-City",),
+        SizedBox(height: 10.0,),
+        RotuloDescricao(descricao: "Coringadissima",),
+        SizedBox(height: 10.0,),
+        ListaInformacoes(info01: "TI",info02: DateTime(17,03,2007),info03: "Babaloo-City",),
+        SizedBox(height: 10.0,),
         RotuloTexto(texto: "Coca cola espumante...",),
       ],
     ),

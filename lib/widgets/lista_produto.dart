@@ -15,7 +15,11 @@ class ListaProduto extends StatelessWidget{
           Text(textoproduto),
           SizedBox(height: 10,),
           Image.asset(imagemproduto),
-          Text(descricaoproduto),
+          Container(
+            padding: EdgeInsets.all(12.0),
+            child: 
+            Text(descricaoproduto),
+          )
         ],
       ),
     );

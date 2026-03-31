@@ -91,7 +91,7 @@ flutter:
   fonts:
     - family: SourGummy
       fonts:
-        - asset: assets/fonts/static/SourGummy-Regular.ttf
+        - asset: assets/fonts/Sour_Gummy/static/SourGummy-SemiBold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
