@@ -12,14 +12,35 @@ class ListaInformacoes extends StatelessWidget{
       padding: const EdgeInsets.all(12.0),
       decoration: BoxDecoration(
         color: Colors.pink,
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(2),
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Text(info01),
-        Text('${info02.day/info02.month/info02.year}'),
-        Text(info03)
+        Container(
+           padding: const EdgeInsets.all(12.0),
+      decoration: BoxDecoration(
+        color: Colors.pink,
+        borderRadius: BorderRadius.circular(2),
+      ),
+       child: Text(info01),
+        ),
+        Container(
+           padding: const EdgeInsets.all(12.0),
+      decoration: BoxDecoration(
+        color: Colors.pink,
+        borderRadius: BorderRadius.circular(2),
+      ),
+      child: Text('${info02.day}/${info02.month}/${info02.year}'),
+        ),
+        Container(
+           padding: const EdgeInsets.all(12.0),
+      decoration: BoxDecoration(
+        color: Colors.pink,
+        borderRadius: BorderRadius.circular(2),
+      ),
+      child: Text(info03),
+        ),
       ],
       )
     );
